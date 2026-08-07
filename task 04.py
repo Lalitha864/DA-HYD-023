@@ -38,39 +38,24 @@ while chance > 0:
 if chance == 0:
     print("Phone Locked")
 '''
-balance = 5000
+#Atm
+pin = "1234"
+chance = 3
 
-while True:
-    print("\n1. Balance")
-    print("2. Deposit")
-    print("3. Withdraw")
-    print("4. Exit")
+while chance > 0:
+    user_pin = input("Enter ATM PIN: ")
 
-    choice = int(input("Enter choice: "))
-
-    if choice == 1:
-        print("Balance:", balance)
-
-    elif choice == 2:
-        amount = int(input("Enter amount: "))
-        balance = balance + amount
-        print("Balance:", balance)
-
-    elif choice == 3:
-        amount = int(input("Enter amount: "))
-        if amount <= balance:
-            balance = balance - amount
-            print("Balance:", balance)
-        else:
-            print("Insufficient balance")
-
-    elif choice == 4:
-        print("Thank you")
+    if user_pin == pin:
+        print("PIN Correct")
+        print("Transaction Successful")
         break
-
     else:
-        print("Invalid choice")
+        chance = chance - 1
+        print("Wrong PIN")
+        print("Chances Left:", chance)
 
+if chance == 0:
+    print("ATM Card Blocked")
 
 
 
