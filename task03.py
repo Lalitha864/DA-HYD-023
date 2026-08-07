@@ -1,86 +1,23 @@
 '''
-total = 0
+n = int(input("Enter number of terms: "))
 
-for i in range(1, 5):
-    price = float(input(f"Enter price of item {i}: "))
-    total += price
+a = 0
+b = 1
 
-print("Total price of the cart =", total)
-
-products = list(map(int,input().split(','))
-total = 0
-for i in products;
-                total = total + i
-print(total)
-
-#Password
-password = input("Enter password: ")
-
-upper = 0
-lower = 0
-digits = 0
-special = 0
-
-for ch in password:
-    if ch.isupper():
-        upper += 1
-    elif ch.islower():
-        lower += 1
-    elif ch.isdigit():
-        digits += 1
-    else:
-        special += 1
-
-print("Uppercase letters:", upper)
-print("Lowercase letters:", lower)
-print("Numbers:", digits)
-print("Special characters:", special)
-
-
-#Domain extract(Email.com)
-emails = input("Enter email addresses separated by space: ").split()
-
-for email in emails:
-    print(email.split("@")[1])
+for i in range(n):
+    print(a, end=" ")
+    c = a + b
+    a = b
+    b = c
 '''
-#Movies Lists
+#while loop
+n = int(input("Enter number of terms: "))
 
-movies = input("Enter movie names separated by commas: ").split(",")
+a = 0
+b = 1
+i = 0
 
-for i in range(len(movies)):
-    print(i + 1, ".", movies[i].strip())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+while i < n:
+    print(a, end=" ")
+    a, b = b, a + b
+    i += 1
