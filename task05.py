@@ -57,7 +57,7 @@ while chances > 0:
 
 if chances == 0 and name.lower() != secret_name:
     print("You lost the game!")
-    print("Chances remaining: 0")
+    print("Chances remaining: 0")b 
 
 
 
